@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body { 
+    background-color: #E9D5DA;
+    color: white;
+    height: 100%;
+}
+
+header {
+    background-color: #827397;
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 3px 6px 20px 0px rgba(0,0,0,0.5);
+}
+
+header h1 {
+    font-size: 28px;
+    padding-left: 180px;
+    text-align: left;
+    font-weight: bold;
+}
+
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.book-shelf {
+    padding: 35px;
+    width: 50%;
+    float: left;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px 20px 0 0;
+
+}
+.input-section { 
+    padding: 40px;
+}
+
+.input-section h2 { 
+    background-color: #4D4C7D;
+    border-radius: 30px;
+    padding: 15px;
+    width: 50%;
+    margin: 0 auto;
+}
+section:nth-child(2) h2 { 
+    background-color: #4D4C7D;
+    padding: 12px;
+}
+section:nth-child(3) h2 {
+    background-color: #4D4C7D;
+    padding: 12px;
+}
+
+.input-section div {
+    top: 100px;
+}
+
+#inputForm { margin-top: 50px; }
+
+.input { margin: 10px; }
+
+label {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #363062;
+}
+
+.input input {
+    font-size: 15px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 5px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.flex-row { display: flex; }
+
+.author { flex-basis: 80%; }
+
+.year { width: 200px; }
+
+form .flex-row:last-child { margin-top: 20px; }
+
+.input-checkbox label {
+    display: inline;
+    margin: 10px;
+}
+
+button { 
+    cursor: pointer;
+}
+
+.button {
+    padding-right: 10px;
+    margin-left: 40px;
+}
+
+#inputBookSubmit { 
+    padding: 10px;
+    font-size: 15px;
+    background-color: #6BCB77;
+    color: white;
+    border-radius: 20px;
+    width: 120px;
+    font-weight: bolder;
+    transition: .5s;
+}
+
+#inputBookSubmit:hover {
+    background-color: #1b9b16;
+    width: 170px;
+    transition: .3s;
+}
+
+.search-book {
+    margin-top: 50px;
+    padding: 0 10px
+}
+
+.search-book h3 { 
+    text-align: center;
+    padding: 10px;
+    background-color: #363062;
+    color: #ffffff;
+    border-radius: 30px;
+    width: 150px;
+}
+
+#searchForm {
+    position: relative;
+    margin-top: 20px;
+}
+
+#inputBookSearch {
+    font-size: 19px;
+    margin-top: 5px;
+    border-radius: 20px 0 0 20px;
+    float: left;
+    padding: 5px 90px 5px 10px;
+    width: 50%;
+}
+
+#searchBook {
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    padding: 5px 10px 5px 10px;
+    top: 4px;
+    width: 80px;
+    background-color: #ffffff;
+    color: #4D4C7D;
+    border: 1px solid #363062;
+    border-radius: 0 20px 20px 0;
+    transition: .3s;
+}
+
+#searchBook:hover {
+    color: white;
+    background-color: #4D4C7D;
+    transition: .5s;
+}
+
+.book-list {
+    background-color: #ffffff;
+    height: 250px;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 8px 8px 50px 0px rgba(97, 97, 97, 0.384);
+    overflow: auto;
+}
+
+.book-list::-webkit-scrollbar{ width: 5px; }
+.book-list::-webkit-scrollbar-track{
+    background-color: #c5c4c4;
+    border-radius: 5px;
+}
+.book-list::-webkit-scrollbar-thumb{
+    background-color: #85849e;
+    border-radius: 10px;
+}
+
+.book-card {
+    width: 100%;
+    font-size: 18px;
+    border: 3px solid #827397;
+    color: #363062;
+    text-transform: capitalize;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.book-title { 
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.book-buttons {
+    margin-top: 5px;
+    text-align: right;
+}
+
+.book-buttons button {
+    min-width: 70px;
+    padding: 5px;
+    margin: 3px;
+    border-radius: 20px;
+}
+
+.book-buttons button { transition: .5s; }
+.green { 
+    background-color: #6BCB77; 
+    font-size: 15px;
+    width: 110px;
+    color: #ffffff;
+}
+.red { 
+    background-color: #FF6B6B; 
+    font-size: 15px;
+    width: 100px;
+    color: #ffffff;
+}
+.green:hover { 
+    background-color: #1b9b16;
+    width: 180px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.red:hover { 
+    background-color: #ff2929;
+    width: 180px;
+    font-weight: bold;
+    transition: .3s;
+}
+
+@media all and (max-width: 900px) {
+
+    body {
+        height: auto;
+        overflow: auto;
+    }
+
+    main {
+        flex-flow: column;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    header h1 {
+        padding: 0;
+        text-align: center;
+    }
+
+    #inputBookSearch {
+        width: 100%;
+    }
+
+    .book-shelf {
+        width: 100%;
+        float: left;
+    }
+}

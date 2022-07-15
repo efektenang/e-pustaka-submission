@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Pustaka Apps Bookshelf</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>e-Pustaka Apps</h1>
+    </header>
+    <main>
+        <section class="input-section">
+            <div>
+                <h2>Baca Buku Apa Hari Ini ?</h2>
+                <form id="inputForm">
+                    <div class="input title">
+                        <label for="inputBookTitle">Judul Buku</label>
+                        <input id="inputBookTitle" type="text" placeholder="isi judul buku.." required>
+                    </div>
+                    <div class="flex-row">
+                        <div class="input author">
+                            <label for="inputBookAuthor">Penulis / Pengarang</label>
+                            <input id="inputBookAuthor" type="text" placeholder="isi nama penulis atau pengarang.." required>
+                        </div>
+                        <div class="input year">
+                            <label for="inputBookYear">Tahun Rilis</label>
+                            <input id="inputBookYear" type="number" placeholder="isi tahun buku .." required>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <div class="input-checkbox">
+                            <label for="isComplete">Sudah Selesai dibaca?</label>
+                            <input id="isComplete" type="checkbox">
+                        </div>
+                        <div class="button">
+                            <button id="inputBookSubmit" type="submit">Tambahkan</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="search-book">
+                    <h3>Cari Buku</h3>
+                    <form id="searchForm">
+                        <input id="inputBookSearch" type="text" placeholder="Judul yang ingin dicari..">
+                        <button id="searchBook" type="button">Cari</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="book-shelf">
+            <h2>Belum Selesai Dibaca</h2>
+            <div class="book-list" id="inCompleteBookShelfList">
+                
+            </div>
+        </section>
+        <section class="book-shelf">
+            <h2>Selesai Dibaca</h2>
+            <div class="book-list" id="completeBookShelfList">
+                
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/dom.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
